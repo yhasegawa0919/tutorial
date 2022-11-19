@@ -1,4 +1,4 @@
-# tutorial
+# tutorial fix-B
 for learning how to use GitHub 
 
 ## :memo: コミットメッセージ
