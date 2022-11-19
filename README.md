@@ -1,4 +1,4 @@
-# tutorial
+# Gitチュートリアル
 for learning how to use GitHub 
 
 ## :memo: コミットメッセージ
