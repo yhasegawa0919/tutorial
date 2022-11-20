@@ -1,6 +1,8 @@
 # Gitチュートリアル
 for learning how to use GitHub
+- feature-A
 - fix-B 
+- feature-C
 
 ## :memo: コミットメッセージ
 - １行目　　：コミットする変更内容の要約
