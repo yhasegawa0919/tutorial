@@ -7,20 +7,25 @@ for learning how to use GitHub
 - ２行目　　：空行
 - ３行目以降：変更理由や詳細内容
 
+（記載例）
+:shirt: README.mdの修正
+
+- リンクの追加
+
 ## :computer: for文の記載例
 '''
-#include <stdio.h>
-int main(void)
-{
-    int i;
-    int sum = 0;
-    for(i = 1 ;i <= 10 ;i++ )
+    #include <stdio.h>
+    int main(void)
     {
-        sum = sum + i;
+        int i;
+        int sum = 0;
+        for(i = 1 ;i <= 10 ;i++ )
+        {
+            sum = sum + i;
+        }
+        printf("sum=%d\n",sum);
+        return(0);
     }
-    printf("sum=%d\n",sum);
-    return(0);
-}
 '''
 
 ## :link: リンクの挿入
