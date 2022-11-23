@@ -8,8 +8,8 @@ for learning how to use GitHub
 - ３行目以降：変更理由や詳細内容
 
 （記載例）
-:shirt: README.mdの修正
-
+- :shirt: README.mdの修正
+- （空行）
 - リンクの追加
 
 ## :computer: for文の記載例
