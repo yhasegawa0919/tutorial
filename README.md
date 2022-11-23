@@ -12,9 +12,9 @@ for learning how to use GitHub
 （空行）
 文言の修正
 
-## :computer: for文の記載例
-- for文で１～１０の総和を求めるプログラム
-'''
+## :computer: コードの挿入
+- for文で１～１０の総和を求めるサンプルプログラム
+'''c:sample.c
 #include <stdio.h>
 int main(void)
 {
