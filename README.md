@@ -7,7 +7,7 @@ for learning how to use GitHub
 - ２行目　　：空行
 - ３行目以降：変更理由や詳細内容
 
-## :iphone: コードの挿入
+## :computer: コードの挿入
 '''java:for文
 #include <stdio.h>
 int main(void)
