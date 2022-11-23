@@ -8,7 +8,7 @@ for learning how to use GitHub
 - ３行目以降：変更理由や詳細内容
 
 ## :computer: コードの挿入
-'''c:hoge
+'''
 #include <stdio.h>
 int main(void)
 {
