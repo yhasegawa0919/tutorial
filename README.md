@@ -33,5 +33,5 @@ int main(void)
 [Google](https://www.google.co.jp/)
 
 ## :ballot_box_with_check: チェックリスト
-- [ ]チェックリスト１
-- [ ]チェックリスト２
+- [ ] チェックリスト１
+- [x] チェックリスト２
