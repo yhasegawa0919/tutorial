@@ -1,6 +1,5 @@
 # Gitチュートリアル
-for learning how to use GitHub
-- practice00
+GitHubの使い方を学ぶために本チュートリアルを活用します
 
 ## :memo: コミットメッセージ
 - １行目　　：コミットする変更内容の要約
@@ -8,12 +7,14 @@ for learning how to use GitHub
 - ３行目以降：変更理由や詳細内容
 
 ## :computer: コードの挿入
-'''c:hoge
+for文で１～１０の総和を求めるサンプルプログラム
+```c:sample.c
 #include <stdio.h>
 int main(void)
 {
     int i;
     int sum = 0;
+    
     for(i = 1 ;i <= 10 ;i++ )
     {
         sum = sum + i;
@@ -21,7 +22,11 @@ int main(void)
     printf("sum=%d\n",sum);
     return(0);
 }
-'''
+```
 
 ## :link: リンクの挿入
 [Google](https://www.google.co.jp/)
+
+## :ballot_box_with_check: チェックリスト
+- [ ] チェックリスト１
+- [x] チェックリスト２
