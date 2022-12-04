@@ -34,12 +34,12 @@ int main(void)
 ## :bulb: Tips
 - ブランチの作成と移動をセットで実行するコマンド
 ```
-git checkout -b branch名
+git checkout -b ブランチ名
 ```
 このコマンドは下記2つのコマンドを実行するのと同じ
 ```
-git branch branch名
-git checkout branch名
+git branch ブランチ名
+git checkout ブランチ名
 ```
 
 ## :soccer: 日本代表の試合日程
