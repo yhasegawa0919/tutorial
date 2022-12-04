@@ -31,6 +31,17 @@ int main(void)
 - [ ] チェックリスト１
 - [x] チェックリスト２
 
+## :bulb: Tips
+- ブランチの作成と移動をセットで実行するコマンド
+```
+git checkout -b branch名
+```
+このコマンドは下記2つのコマンドを実行するのと同じ
+```
+git branch branch名
+git checkout branch名
+```
+
 ## :soccer: 日本代表の試合日程
 1. 2022/11/23(Wed)
 2. 2022/11/27(Sun)
