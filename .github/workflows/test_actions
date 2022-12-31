@@ -1,5 +1,13 @@
-name: GitHub Actions Demo
-on: [push]
+name: GitHub Actions Demo # ワークフローの名前
+# on.workflow_dispatch.inputs
+on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: 'BRANCH NAME.(e.g. main)'
+        required: false
+        default: 'main'
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
