@@ -2,6 +2,11 @@ name: GitHub Actions Demo # ワークフローの名前
 # on.workflow_dispatch.inputs
 on:
   workflow_dispatch:
+    inputs: # inputs文脈
+      branch_name: # パラメータ名
+        description: 'BRANCH NAME(e.g. main)' # 説明
+        required: false # true:入力必須, false:入力任意
+        default: 'main' # 規定値は'main'
     
 jobs:
   Explore-GitHub-Actions:
