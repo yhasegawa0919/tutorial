@@ -12,6 +12,10 @@ jobs:
   Try-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo 'BRANCH NAME is ${{ inputs.branch_name }}'
+      - name: practice of YAML
+        run: |
+          echo 'BRANCH NAME is ${{ inputs.branch_name }}'
+          time=$(date -d '9 hours''+%H%M%S') # 現在の日時の9時間後
+          t_daytime=${day}_${time}
+          echo $t_daytime
 # EOF
