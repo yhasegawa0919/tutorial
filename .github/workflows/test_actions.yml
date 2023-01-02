@@ -10,12 +10,10 @@ on:
     
 jobs:
   Try-GitHub-Actions:
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     steps:
       - name: practice of YAML
         run: |
           echo 'BRANCH NAME is ${{ inputs.branch_name }}'
-          time=$(date -d "9 hours""+%H%M%S")
-          t_daytime=${day}_${time}
-          echo $date
+          echo 'Hello World!!'
 # EOF
