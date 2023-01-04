@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: practice of YAML
+        id: practice
         run: |
           echo 'BRANCH NAME is ${{ inputs.branch_name }}'
           echo ${GITHUB_REF}
@@ -20,7 +21,7 @@ jobs:
           echo ${BRANCH}
           echo ${{ github.event.inputs.branch_name }}
 #          echo "::set-output name=branchname::$BRANCH"
-          echo "branchname=${BRANCH}" >> $GITHUB_OUTPUT
-          echo ${{steps.vars.outputs.branchname}}
+          echo "branchname=${BRANCH}" >> ${GITHUB_OUTPUT}
+#          echo ${{steps.vars.outputs.branchname}}
 # refs/heads/[branch名] -> [branch名]を抽出
 # EOF
