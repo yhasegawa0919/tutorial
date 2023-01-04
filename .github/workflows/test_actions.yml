@@ -18,4 +18,5 @@ jobs:
           echo 'Hello World!!'
           echo ${GITHUB_REF}
           BRANCH=$(echo ${GITHUB_REF} | rev | cut -d'/' -f1 | rev)
+          echo ${BRANCH}
 # EOF
