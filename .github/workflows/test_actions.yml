@@ -15,8 +15,9 @@ jobs:
       - name: practice of YAML
         run: |
           echo 'BRANCH NAME is ${{ inputs.branch_name }}'
-          echo 'Hello World!!'
           echo ${GITHUB_REF}
-          BRANCH=$(echo ${GITHUB_REF} | rev | cut -d'/' -f1 | rev)
+          BRANCH=$(echo ${GITHUB_REF} | rev | cut -d'/' -f1 | rev) #revコマンドは文字を逆に変換
           echo ${BRANCH}
+          echo ${{ github.event.inputs.branch_name }}
+# refs/heads/[branch名] -> [branch名]を抽出
 # EOF
