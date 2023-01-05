@@ -23,8 +23,13 @@ jobs:
           echo ${BRANCH1}
           BRANCH2=${BRANCH1}_${{ github.event.inputs.branch_name }}_${{ github.ref_name }}
           echo ${BRANCH2}
-#          echo "::set-output name=branchname::$BRANCH"
-#          echo "branchname=${BRANCH}" >> ${GITHUB_OUTPUT}
-#          echo ${{steps.vars.outputs.branchname}}
+
+          branch_input='main'
+          if [ ${{ github.event.inputs.branch_name }} != "${branch_input}" ]; then
+            std_input=0
+          else
+            std_input=1
+          fi
+          echo ${std_input}
 # refs/heads/[branch名] -> [branch名]を抽出
 # EOF
