@@ -12,7 +12,7 @@ jobs:
   Try-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: practice of YAML
+      - name: practice_of_command
         id: practice
         run: |
           echo 'BRANCH NAME is ${{ inputs.branch_name }}'
@@ -33,5 +33,11 @@ jobs:
           echo ${std_input}
 
           echo ${{ github.event.repository.name }}
+      - name: Practice2
+        id: practice2
+        if: ${{ github.event.inputs.branch_name == 'main' }}
+        run: |
+          echo 'If condition is TRUE.'
+          echo '---------------------'    
 # refs/heads/[branch名] -> [branch名]を抽出
 # EOF
