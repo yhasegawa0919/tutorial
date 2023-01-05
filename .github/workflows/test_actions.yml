@@ -31,14 +31,14 @@ jobs:
             std_input=1
           fi
           echo ${std_input}
-
           echo ${{ github.event.repository.name }}
+          echo ${{ github.workspace }}
+          echo ${GITHUB_WORKSPACE}  
+
       - name: Practice2
         id: practice2
         if: ${{ github.event.inputs.branch_name == 'main' }}
         run: |
           echo 'If condition is TRUE.'
           echo '---------------------'
-          echo ${GITHUB_WORKSPACE}  
-# refs/heads/[branch名] -> [branch名]を抽出
 # EOF
