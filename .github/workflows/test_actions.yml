@@ -38,6 +38,7 @@ jobs:
         if: ${{ github.event.inputs.branch_name == 'main' }}
         run: |
           echo 'If condition is TRUE.'
-          echo '---------------------'    
+          echo '---------------------'
+          echo ${GITHUB_WORKSPACE}  
 # refs/heads/[branch名] -> [branch名]を抽出
 # EOF
