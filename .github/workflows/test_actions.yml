@@ -16,7 +16,9 @@ jobs:
         id: practice
         run: |
           echo 'BRANCH NAME is ${{ inputs.branch_name }}'
-          echo ${GITHUB_REF}
+          echo ${GITHUB_REF}          # refs/heads/[branch名]
+          echo ${{ github.ref }}      # refs/heads/[branch名]
+          echo ${{ github.ref_name }} # [branch名]
           BRANCH=$(echo ${GITHUB_REF} | rev | cut -d'/' -f1 | rev) #revコマンドは文字を逆に変換
           echo ${BRANCH}
           echo ${{ github.event.inputs.branch_name }}
