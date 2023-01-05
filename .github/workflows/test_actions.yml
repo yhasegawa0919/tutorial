@@ -31,5 +31,7 @@ jobs:
             std_input=1
           fi
           echo ${std_input}
+
+          echo ${{ github.event.repository.name }}
 # refs/heads/[branch名] -> [branch名]を抽出
 # EOF
