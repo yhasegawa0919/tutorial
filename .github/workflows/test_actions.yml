@@ -22,6 +22,7 @@ jobs:
           BRANCH=$(echo ${GITHUB_REF} | rev | cut -d'/' -f1 | rev) #revコマンドは文字を逆に変換
           echo ${BRANCH}
           echo ${{ github.event.inputs.branch_name }}
+          echo ${BRANCH}_${ inputs.branch_name}_${{ github.ref_name }}
 #          echo "::set-output name=branchname::$BRANCH"
 #          echo "branchname=${BRANCH}" >> ${GITHUB_OUTPUT}
 #          echo ${{steps.vars.outputs.branchname}}
