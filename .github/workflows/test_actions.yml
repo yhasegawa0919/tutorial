@@ -43,5 +43,5 @@ jobs:
           echo '---------------------'
           text_name=${{ github.event.inputs.branch_name }}\*.txt
 #          t_text_name=`ls -1 $text_name`
-          echo $text_name
+          echo ${text_name}
 # EOF
