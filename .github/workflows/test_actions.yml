@@ -41,4 +41,7 @@ jobs:
         run: |
           echo 'If condition is TRUE.'
           echo '---------------------'
+          text_name=${{ github.event.inputs.branch_name }}\*.txt
+          t_text_name=`ls -1 $text_name`
+          echo $t_text_name
 # EOF
